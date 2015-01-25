@@ -1,0 +1,3 @@
+[submodule "slave"]
+	path = slave
+	url = ./slave

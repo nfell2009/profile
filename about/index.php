@@ -74,7 +74,7 @@
 		 		<h5 style="color:black" ><Strong>Hosting as many slaves as you can.</Strong></h5>
 		 		<p>The light weight slave, is a single PHP script and can be found in the <i>profile</i> tab when you're logged in. All you need is a webserver, with cURL and PHP installed.<br/>Then add the server in the <i>profile</i> tab.</p>
 		 		<h5 style="color:black" ><strong>Contributing on GitHub.</strong></h5>
-				<p>That's right! We're going full open source. What's to hide?<br/>You can fix a type-o, or add something that could make the site function way better. <strong>PULL REQUESTS ARE WELCOME</strong>.<br/><a><strong><strong>Reserved for GitHub Link</strong></strong></a></p>
+				<p>That's right! We're going full open source. What's to hide?<br/>You can fix a type-o, or add something that could make the site function way better. <strong>PULL REQUESTS ARE WELCOME </strong>.<br/><a href="https://github.com/ac3-profiles/profile"><strong><strong>GitHub</strong></strong></a></p>
 				<div class="hline"></div>
 				<div class="spacing"></div>
 				

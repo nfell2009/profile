@@ -163,7 +163,7 @@
 				<hr/>
 				<button id="AddServer" class="btn btn-block btn-info" data-toggle="modal" data-target="#AddServerModal" ><span class="glyphicon glyphicon-plus-sign"></span> Add A Server <span class="glyphicon glyphicon-plus-sign"></span></button>
 				<br/>
-				<a href="http://stash.ac3-servers.eu/projects/AC3/repos/profiles-slave/browse/README.MD" class="btn btn-block btn-warning"><span class="glyphicon glyphicon-download-alt"></span> Get The Slave Script <span class="glyphicon glyphicon-download-alt"></span></a>
+				<a href="https://github.com/ac3-profiles/profile-slave" class="btn btn-block btn-warning"><span class="glyphicon glyphicon-download-alt"></span> Get The Slave Script <span class="glyphicon glyphicon-download-alt"></span></a>
 				<br/>		
 				<div class="hline"></div>
 				<div class="spacing"></div>		

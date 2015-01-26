@@ -101,6 +101,9 @@
 	@include_once("phpfastcache/phpfastcache.php");
 	@include_once("../phpfastcache/phpfastcache.php");
 	require_once("api.php");
+	require_once("user_functions.php");
+	//getTotalUsers()
+	//getTotalUsableServers()
 		
 	$cache = phpFastCache();
 	//$cache->set("api_statistics_" . $uuid, null, 0);	
@@ -112,6 +115,27 @@
 	}else{
 		echo("<!-- Cached results -->");
 	}
+	
+	if($uuid == "ALL"){
+		$totUsers = $cache->get("total_users");
+		
+		if($stats == null){
+			$totUsers = getTotalUsers();
+			$cache->set("total_users", $totUsers, 1200);
+		}else{
+			echo("<!-- Cached TotalUsers -->");
+		}
+		
+		$totServers = $cache->get("total_Servers");
+		
+		if($stats == null){
+			$totServers  = getTotalUsableServers();
+			$cache->set("total_Servers", $totServers , 1200);
+		}else{
+			echo("<!-- Cached TotalUsers -->");
+		}
+		
+	}
 	  
 	  ?>
 		
@@ -121,6 +145,12 @@
 			<p><i class="fa fa-angle-right"></i> U2NH<span class="badge badge-theme pull-right"><?php if($stats["u2nh"] == null) $stat = 0; else $stat = $stats["u2nh"]; echo($stat); ?></span></p>
 			<p><i class="fa fa-angle-right"></i> UN2U<span class="badge badge-theme pull-right"><?php if($stats["un2u"] == null) $stat = 0; else $stat = $stats["un2u"]; echo($stat); ?></span></p>
 			<p><i class="fa fa-angle-right"></i> U2P<span class="badge badge-theme pull-right"><?php if($stats["u2p"] == null) $stat = 0; else $stat = $stats["u2p"]; echo($stat); ?></span></p>
+			<?php if($uuid == "ALL"){ ?>
+				<hr/>
+				<p><i class="fa fa-angle-right"></i> Total Users<span class="badge badge-theme pull-right"><?php if($totUsers == null) $totUsers = 0; echo($totUsers); ?></span></p>
+				<p><i class="fa fa-angle-right"></i> Total Usable Slaves<span class="badge badge-theme pull-right"><?php if($totServers == null) $totServers = 0; echo($totServers); ?></span></p>
+				<hr/>
+			<?php } ?>
 		<div class="spacing"></div>
 	  
 	  <?php

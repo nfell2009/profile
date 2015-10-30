@@ -4,7 +4,7 @@
 	include_once("includes/user_functions.php");
 	include_once("includes/api.php");
 
-	$error = "";
+	$error = ""; //no error?!?! :O
 	
 	//var_dump($_POST);
 	

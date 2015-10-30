@@ -26,7 +26,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>Profiles | <?php echo(ucwords($pageName)); ?></title>
+    <title>Profiles | <?php echo( ucwords( $pageName ) ); ?></title>
 
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
@@ -56,6 +56,7 @@
 
 	 <div class="container mtb">
 	 	<div class="row">
+	 		<div class="col-lg-8"><h3 class="ctitle">Abandoned</h3><p>Yeah this is pretty much abandoned.. Sorry.</p></div>
 			<div class="col-lg-8">
 				<?php
 					include("includes/blog.php");
